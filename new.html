@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的通訊錄</title>
+    <!-- 載入所需的CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container theme-showcase" role="main">
+
+      <header>
+        <h1>我的通訊錄 <small>資料庫專題</small></h1>
+      </header>
+
+      <nav>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.php">電話簿列表</a></li>
+                <li class="active"><a href="new.html">新增一筆資料</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </nav>
+
+      <section>
+
+        <form action="toNew.php" method="post">
+          <div class="form-group">
+            <label for="inputName">姓名</label>
+            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="inputTel">電話</label>
+            <input type="tel" class="form-control" id="inputTel" name="inputTel" placeholder="09XXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">電子郵件</label>
+            <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="xxx@xxx.com">
+          </div>
+
+          <input type="submit" class="btn btn-default"></input>
+        </form>
+
+      </section>
+
+      <footer>
+        <p>Copyright 2015</p>
+      </footer>
+
+    </div>
+
+    <!-- 載入所需的JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
